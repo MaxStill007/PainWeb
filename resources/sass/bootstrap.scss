@@ -1,0 +1,18 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+// custom variables
+$custom-colors: (
+    "CustomWhite": #e1e2e2,
+    "CustomPrimary": #fb8122,
+    "CustomDimPrimary": #fb8022c2,
+    "CustomDark": #1d2228,
+    "CustomBrown": #14110e,
+    "CustomBorder": #32323d,
+);
+
+// merge custom style
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
